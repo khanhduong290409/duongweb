@@ -1,0 +1,52 @@
+
+body {
+   background-color: #F2CDC4;
+    ;
+}
+.container {
+    /* margin: 0px 100px; */
+    width: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
+ display: flex;
+ justify-content: space-between;
+}
+.design {
+    margin:0 50px;
+    /* text-align: center; */
+}
+h1 {
+    text-align: center;
+    color: #4d4646;
+    padding: 20px 0;
+}
+img {
+    /* display: block; */
+    width: 600px;
+    height: 450px;
+    padding-bottom: 30px;
+}
+.dowload-button {
+    display: block;
+    text-align: center;
+
+}
+button {
+    padding:10px 30px;
+    margin-left: 10px;
+    margin-right:10px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #403C3A;
+    background-color:#403C3A ;
+    color: #fff;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #D97B66;
+    color: #fff;
+    border-color: #D97B66;
+    transition: all 0.2s  ease;    
+
+}
+/* ************* */

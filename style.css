@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.left {
+    display: block;
+    float: left;
+}
+.right {
+    display: block;
+    float:right;
+}
+body {
+	font-family: 'Luckiest Guy', cursive;
+    /* font-weight: 500; */
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-general {
+    width: 49%;
+    height:380px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0 3px #686563;
+
+}
+.font-nomal {
+    font-size: 25px;
+    line-height: 22.5px;
+}
+.font-topic {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    color: #403C3A;
+    
+} /* phần sử dụng chung */
+.header {
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.4) ;
+    background-color: #fff;
+    height:45px;
+    color:#403C3A;   
+    position: sticky;
+    z-index: 100;
+    left:0;
+    right: 0;
+    top: 0;
+    display: block;
+    
+}
+.logo {
+    font-weight: 800;
+    padding-left: 45px;
+    line-height: 45px;
+    cursor: pointer;
+
+    
+    
+}
+.menu {
+    line-height: 45px;
+    font-size: 18px;
+    
+}
+.menu .tab {
+    /* padding:0 45px; */
+}
+.tab a {
+    display: block;
+    height: 100%;
+    padding:0 45px;
+    color: #403C3A;
+    text-decoration: none;
+}
+.menu .tab:hover {
+    background-color: gray;
+    color: #fff;
+    opacity: 0.4;
+    border-radius:  2px;
+    cursor: pointer;
+    transition: all 0.2s  ease;    
+}
+.tab:hover a {
+    color: #fff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+	  background-color: black;
+      font-family: 'Luckiest Guy', cursive;
+}
+
+.gallery {
+    position: relative;
+    width: 100%;
+    height: 100%;
+	
+}
+
+.gallery img {
+	opacity: 0;
+	animation: slideTop .5s ease forwards;
+	animation-delay: calc(.75s * var(--i));
+	filter:brightness(70%) contrast(150%) saturate(30%) brightness(150%);
+	box-shadow: -3px -3px 23px black;
+}
+
+[class^="photo"] {
+    position: absolute;
+    width: 40vw; 
+    height: auto;
+}
+
+.photo1 {
+    top: calc(10vh - 50px);
+    left: calc(10vw - 50px);
+}
+
+.photo2 {
+    top: calc(30vh - 50px);
+    left: calc(30vw - 50px);
+}
+
+.photo3 {
+    top: calc(50vh - 50px);
+    left: 50vw;
+}
+
+h1{
+	position: absolute;
+	top: 0;
+	right: 2rem;
+	color: white;
+	animation: slideTop .5s ease forwards;
+	opacity:0;
+	animation-delay: calc(.5s);
+}
+
+@keyframes slideTop {
+	0% {
+		transform: translatey(100px);
+		opacity: 0;
+	}
+	
+	100% {
+		transform: translatey(0px);
+		opacity: 1;
+	}
+}

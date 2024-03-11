@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.left {
+    display: block;
+    float: left;
+}
+.right {
+    display: block;
+    float:right;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 500; */
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-general {
+    width: 49%;
+    height:380px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0 3px #686563;
+
+}
+.font-nomal {
+    font-size: 25px;
+    line-height: 22.5px;
+}
+.font-topic {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 30px;
+    color: #403C3A;
+    
+} /* phần sử dụng chung */
+.header {
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.4) ;
+    background-color: #fff;
+    height:45px;
+    color:#403C3A;   
+    position: sticky;
+    z-index: 100;
+    left:0;
+    right: 0;
+    top: 0;
+    display: block;
+    
+}
+.logo {
+    font-weight: 800;
+    padding-left: 45px;
+    line-height: 45px;
+    cursor: pointer;
+}
+.menu {
+    line-height: 45px;
+    font-size: 18px;
+    
+}
+.menu .tab {
+    /* padding:0 45px; */
+}
+.tab a {
+    display: block;
+    height: 100%;
+    padding:0 45px;
+    color: #403C3A;
+    text-decoration: none;
+}
+.menu .tab:hover {
+    background-color: gray;
+    color: #fff;
+    opacity: 0.4;
+    border-radius:  2px;
+    cursor: pointer;
+    transition: all 0.2s  ease;    
+}
+.tab:hover a {
+    color: #fff;
+}
+.slider {
+    text-align: center;
+}
+.slider h1 {
+    padding: 20px 0;
+}
+.slider img{
+    width: 100%;
+    height: 500px;
+}
+.content {
+    display: block;
+    height:200px;
+}
+.box-content {
+    padding:30px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.content-lob {
+    
+    display: block;
+    float: left;
+    width: 30%;
+    /* height: 200px; */
+    text-align: justify;
+    line-height: 22.5px;
+
+}
+.content-lob h2 {
+    font-size: 28px;
+    padding-bottom: 20px;
+}
+.content-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-button button {
+    font-size: 30px;
+    line-height: 25px;
+    padding: 40px 80px;
+    border-radius: 25px;
+    border-color: #fff;
+    border-style: solid;
+    background: linear-gradient(to top right, #1B712D,#41CE1B);
+    color: #fff;
+    font-weight: 700;
+}
+.content-button button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.2s ease;
+}
+img {
+    cursor: pointer;
+}
+
