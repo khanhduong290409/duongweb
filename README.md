@@ -132,3 +132,6 @@ task docker_deploy {
     docker_deploy.dependsOn build
     tasks.getByName('docker_app_start').mustRunAfter docker_upload_file_to_server
 }
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
